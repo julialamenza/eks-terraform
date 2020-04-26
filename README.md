@@ -1,6 +1,21 @@
 ## EKS 
 
-**Commands**
+
+
+
+**Terraform Commands**
+
+Inside the roo directory 
+You should run
+````
+terraform init
+terraform plan -o teste-tf
+````
+RUN
+
+```
+terraform apply -o teste-tf
+```
 
 The terraform module stores the kubeconfig information in it’s state store. We can view it with this command:
 
