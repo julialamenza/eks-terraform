@@ -36,12 +36,13 @@ terraform apply -o teste-tf
 
 After this you could use my eksconfig.sh to ble to config your
 kubeconfig and config-map to conect your eks with your kubectl and be able to manage your  pods, nodes, etc.
+<br>
 And also apply directly the kb8s-manifest module
 
 Inside the project directory run:
 
 ``` 
-chmod +x ./eksconfig.sg
+chmod +x ./eksconfig.sh
 ```
 ./eksconfig.sh
 
