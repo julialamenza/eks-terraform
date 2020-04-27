@@ -43,8 +43,9 @@ Inside the project directory run:
 
 ``` 
 chmod +x ./eksconfig.sh
-```
+
 ./eksconfig.sh
+```
 
 **or**
 
