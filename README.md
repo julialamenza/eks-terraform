@@ -117,7 +117,7 @@ to apply  kb8s manifest
 WORKS!!!!!
 ```
 
-Go everything works.
+Great everything works.
 
 To destroy use ``` terraform destory ``` inside **kb8s-manifest** module and after from Project root directory and you will be able to delete all your infraestructure and deployment.
 
