@@ -107,7 +107,7 @@ Run
 
 ```
 terraform apply
-````
+```
 to apply  kb8s manifest
 ---------------------------
 
