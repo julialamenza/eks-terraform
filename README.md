@@ -17,7 +17,7 @@ git clone https://github.com/julialamenza/eks-terraform.git
 ```
 **Terraform Commands**
 
-````
+```
 cd eks-terraform/
 ```
 
