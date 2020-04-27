@@ -1,3 +1,5 @@
+##create kubeconfig and config-map
+
 locals {
   config-map-aws-auth = <<CONFIGMAPAWSAUTH
 apiVersion: v1
