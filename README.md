@@ -100,9 +100,18 @@ Confirm your Nodes:
 ```
 kubectl get nodes
 ````
+
+Go to eks-terraform/modules/kb8s-manifest/
+
+Run
+
+```
+terraform apply
+````
+to apply  kb8s manifest
 ---------------------------
 
-**After this we will receive a elbhostname if you copy this link you will be able to visualize this message:
+**After this we will receive a elbhostname if you copy this link you will be able to visualize this message:**
 
 ```
 WORKS!!!!!
