@@ -17,20 +17,25 @@ git clone https://github.com/julialamenza/eks-terraform.git
 ```
 **Terraform Commands**
 
+````
+cd eks-terraform/
+```
+
 RUN
 
-````
+```
 terraform plan -o teste-tf
 ```
 the "-o" will copy the output to teste-tf
 
 After RUN
 
-````
+```
 terraform apply -o teste-tf
-````
+```
 
-After this you could use my eksconfig.sh to ble to config your kubeconfig and config-map to conect your eks with your kubectl and be able to manage your  pods, nodes, etc.
+After this you could use my eksconfig.sh to ble to config your
+kubeconfig and config-map to conect your eks with your kubectl and be able to manage your  pods, nodes, etc.
 And also apply directly the kb8s-manifest module
 
 Inside the project directory run:
