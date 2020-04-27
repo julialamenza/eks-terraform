@@ -51,10 +51,11 @@ You can follow the commands bellow
 
 Inside the root directory 
 You should run
-````
+
+```
 terraform init
 terraform plan -o teste-tf
-````
+```
 RUN
 
 ```
@@ -74,7 +75,7 @@ We now need to add this new config to the KubeCtl Config list:
 ```
 export KUBECONFIG=${HOME}/.kube/config-teste-tf:${HOME}/.kube/config
 echo "export KUBECONFIG=${KUBECONFIG}" >> ${HOME}/.zshrc
-````
+```
 
 The terraform state also contains a config-map we can use for our EKS workers.
 
@@ -90,7 +91,7 @@ Apply the config-map:
 
 ```
 kubectl apply -f /tmp/config-map-aws-auth.yml
-````
+```
 
 Confirm your Nodes:
 
@@ -119,15 +120,15 @@ For this you just need the eks.
  kubectl apply -f zookeeper.yml
  ````
 Watch for all of the Pods in the StatefulSet to become Running and Ready.
-````
+```
 kubectl get po -lapp=zk -w
 ```
 
 You need to configure the Kafka cluster to communicate with the zookeeper ensemble you created above
 
-````
+```
 kubectl apply -f kafka.yml
-````
+```
 Wait for all of the Pods to become Running and Ready.
 
 ```
@@ -138,13 +139,13 @@ kubectl get po -lapp=kafka -w
 **Testing the cluster ***
 First you will need to create a topic. You can use kubectl run to execute the kafka-topics.sh script.
 
-````
+```
 kubectl run -ti --image=gcr.io/google_containers/kubernetes-kafka:1.0-10.2.1 createtopic --restart=Never --rm -- kafka-topics.sh --create \
 --topic test \
 --zookeeper zk-cs.default.svc.cluster.local:2181 \
 --partitions 1 \
 --replication-factor 3
-````
+```
 Now use kubectl run to execute the kafka-console-consumer.sh command and listen for messages.
 
 ```
