@@ -3,7 +3,7 @@
 With this repository you will be able to spin up a eks and deploy a nginx manifest using terraform.
 This repository have everything that you need to make your eks works, including network part.
 
-First you should export you AWS credentials
+First you should export your AWS credentials
 
 ```
 export AWS_ACCESS_KEY_ID=
