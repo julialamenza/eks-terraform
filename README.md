@@ -119,12 +119,12 @@ WORKS!!!!!
 
 Great everything works.
 
-To destroy use ``` terraform destory ``` inside **kb8s-manifest** module and after from Project root directory and you will be able to delete all your infraestructure and deployment.
+To destroy use ``` terraform destory ```  inside **kb8s-manifest** module and do it also on the Project root directory and you will be able to delete all your infraestructure and deployment.
 
 
-- IF you wanna you can deploy kafka cluster using the **APP2**
+- If you wanna you can deploy kafka cluster using the manifest inside **APP2's** directory
 For this you just need the eks.
- go to **APP2** directory
+ go to **APP2** directory and follow this commands:
 
  RUN:
  ````
@@ -169,7 +169,7 @@ In another terminal, run the kafka-console-producer.sh command.
 kubectl run -ti --image=gcr.io/google_containers/kubernetes-kafka:1.0-10.2.1 produce --restart=Never --rm \
  -- kafka-console-producer.sh --topic test --broker-list kafka-0.kafka-hs.default.svc.cluster.local:9093,kafka-1.kafka-hs.default.svc.cluster.local:9093,kafka-2.kafka-hs.default.svc.cluster.local:9093 done;
  ````
-When you type text into the second terminal. You will see it appear in the first.
+When you type text into the second terminal, you will see it appear in the first.
 
 
-On this kafka and zookeerper par I use the default paramaters and manifests from - https://github.com/kow3ns/kubernetes-kafka/tree/master/manifests
+On this kafka and zookeerper part I use the default paramaters and manifests from - https://github.com/kow3ns/kubernetes-kafka/tree/master/manifests
